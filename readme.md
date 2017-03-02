@@ -12,7 +12,7 @@
 	step1.在start.spring.io中生成一个支持spring-boot-starter-data-mongodb的demo；
 	step2.在application.properties中配置数据库ip、port、database；
 	step3.在xxxConfig.java中，配置ORM映射对应的domain model，配置MongoTemplate；
-	step4.定义domain model，spring boot服务启动时，回扫描model，生成数据库的schema。
+	step4.定义domain model，spring boot服务启动时，会扫描model，生成数据库的schema。
 
 ## 2.数据库操纵DML ##
 	step1.每个domain model，都要定义一个dao接口xxxRepository,它从接口MongoRepository派生，
